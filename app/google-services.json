@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47929887001",
+    "project_id": "readniggareadfin",
+    "storage_bucket": "readniggareadfin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47929887001:android:64a4829017c0c63ad79d88",
+        "android_client_info": {
+          "package_name": "com.mad.readniggareadfin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB65UyTiilp5bzQTaRugioW1aiy8XPU6Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
