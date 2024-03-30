@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068"
-        app:srcCompat="@drawable/nav_exit" />
+        app:srcCompat="@drawable/logout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/back"
