@@ -36,10 +36,17 @@ public class LoginActivity extends AppCompatActivity {
         redir = findViewById(R.id.redirbutton);
         login = findViewById(R.id.button);
         FloatingActionButton exit = findViewById(R.id.exitbutton);
-        exit.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();
             }
         });
         redir.setOnClickListener(new View.OnClickListener() {
