@@ -1,5 +1,7 @@
 package com.mad.readniggareadfin;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -32,6 +35,13 @@ public class LoginActivity extends AppCompatActivity {
         pass = findViewById(R.id.pass);
         redir = findViewById(R.id.redirbutton);
         login = findViewById(R.id.button);
+        FloatingActionButton exit = findViewById(R.id.exitbutton);
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         redir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
