@@ -23,6 +23,9 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.mad.readniggareadfin.databinding.ActivityHomeBinding;
 
+//i may be paranoid
+//but no android
+
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
 
@@ -56,6 +59,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         if(item.getItemId() == R.id.nav_exit) {
             finishAffinity();
+        }
+        if(item.getItemId() == R.id.nav_read) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReadFragment()).commit();
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

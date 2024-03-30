@@ -6,9 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:id="@+id/cover"
-        android:layout_width="140dp"
-        android:layout_height="141dp"
+        android:id="@+id/image"
+        android:layout_width="144dp"
+        android:layout_height="201dp"
         android:layout_centerVertical="true"
         android:layout_marginRight="18dp" />
 
@@ -17,14 +17,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:layout_toRightOf="@+id/cover"
+        android:layout_toRightOf="@+id/image"
         android:textSize="30dp"
         android:textColor="@color/black"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/author"
-        android:layout_toRightOf="@+id/cover"
+        android:layout_toRightOf="@+id/image"
         android:text="number"
         android:layout_below="@id/name"
         android:textSize="20dp"
@@ -32,6 +32,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_below="@id/img"
+        android:layout_below="@id/image"
         android:layout_marginTop="10dp"/>
 </RelativeLayout>

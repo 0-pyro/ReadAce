@@ -87,3 +87,5 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 }
+//i may be paranoid
+//but not an android
