@@ -60,6 +60,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = mail.getText().toString();
                 String pw = pass.getText().toString();
+                if(email.isEmpty()) {
+                    mail.setError("Enter mail");
+                }
+                if(pw.isEmpty()) {
+                    pass.setError("Enter pass");
+                }
                 if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                     if(!pw.isEmpty()) {
                         auth.signInWithEmailAndPassword(email, pw).addOnSuccessListener(new OnSuccessListener<AuthResult>() {

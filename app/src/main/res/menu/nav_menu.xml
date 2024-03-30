@@ -10,6 +10,11 @@
             android:title="Home"/>
 
         <item
+            android:id="@+id/nav_read"
+            android:icon="@drawable/nav_read"
+            android:title="Read"/>
+
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/nav_exit"
             android:title="Logout"/>
