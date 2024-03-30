@@ -11,8 +11,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     TextView name, author;
     ViewHolder(View view) {
         super(view);
-        name = (TextView) view.findViewById(R.id.name);
-        author = (TextView) view.findViewById(R.id.author);
-        cover = (ImageView) view.findViewById(R.id.cover);
+        name = view.findViewById(R.id.name);
+        author = view.findViewById(R.id.author);
+        cover = view.findViewById(R.id.image);
     }
 }
