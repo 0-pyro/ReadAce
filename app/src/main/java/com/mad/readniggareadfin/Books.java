@@ -1,13 +1,22 @@
 package com.mad.readniggareadfin;
 
 public class Books {
-    public String name, author;
+    public String name, author, filename;
     public int image;
 
-    public Books(String name, String author, int image) {
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
+    public Books(String name, String author, int image, String filename) {
         this.name = name;
         this.author = author;
         this.image = image;
+        this.filename = filename;
     }
 
     public String getName() {

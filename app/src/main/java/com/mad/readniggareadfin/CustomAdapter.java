@@ -1,6 +1,10 @@
 package com.mad.readniggareadfin;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +15,11 @@ import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
     public List<Books> localDataset;
-    public CustomAdapter(List<Books> books) {
+    public Context con;
+
+    public CustomAdapter(List<Books> books, Context context) {
         localDataset = books;
+        con = context;
     }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -24,6 +31,17 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
         viewHolder.name.setText(localDataset.get(position).getName());
         viewHolder.author.setText(localDataset.get(position).getAuthor());
         viewHolder.cover.setImageResource(localDataset.get(position).getImage());
+
+        viewHolder.cover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(con, ReadActivity.class);
+                Bundle b = new Bundle();
+                b.putString("filename", localDataset.get(viewHolder.getAdapterPosition()).getFilename());
+                i.putExtras(b);
+                con.startActivity(i);
+            }
+        });
     }
     @Override
     public int getItemCount() {

@@ -32,8 +32,8 @@ public class ReadFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView rview = view.findViewById(R.id.recyclerview);
         List<Books> books = new ArrayList<>();
-        books.add(new Books("A Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover));
+        books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
         rview.setLayoutManager(new LinearLayoutManager(getContext()));
-        rview.setAdapter(new CustomAdapter(books));
+        rview.setAdapter(new CustomAdapter(books, this.getContext()));
     }
 }
