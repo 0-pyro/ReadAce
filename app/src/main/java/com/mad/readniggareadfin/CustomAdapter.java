@@ -42,6 +42,26 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
                 con.startActivity(i);
             }
         });
+        viewHolder.name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(con, ReadActivity.class);
+                Bundle b = new Bundle();
+                b.putString("filename", localDataset.get(viewHolder.getAdapterPosition()).getFilename());
+                i.putExtras(b);
+                con.startActivity(i);
+            }
+        });
+        viewHolder.author.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(con, ReadActivity.class);
+                Bundle b = new Bundle();
+                b.putString("filename", localDataset.get(viewHolder.getAdapterPosition()).getFilename());
+                i.putExtras(b);
+                con.startActivity(i);
+            }
+        });
     }
     @Override
     public int getItemCount() {

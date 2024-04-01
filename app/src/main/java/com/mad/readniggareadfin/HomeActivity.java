@@ -63,6 +63,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if(item.getItemId() == R.id.nav_read) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReadFragment()).commit();
         }
+        if(item.getItemId() == R.id.nav_about) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
+        }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
