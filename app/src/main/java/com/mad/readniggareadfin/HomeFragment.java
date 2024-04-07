@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), ReadActivity.class);
                 Bundle b = new Bundle();
-                b.putString("filename", "Dance With Dragons.pdf");
+                b.putString("filename", "PHYSICS.pdf");
                 i.putExtras(b);
                 v.getContext().startActivity(i);
             }
@@ -55,7 +55,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), ReadActivity.class);
                 Bundle b = new Bundle();
-                b.putString("filename", "Dance With Dragons.pdf");
+                b.putString("filename", "Leviathan Wakes.pdf");
                 i.putExtras(b);
                 v.getContext().startActivity(i);
             }
@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), ReadActivity.class);
                 Bundle b = new Bundle();
-                b.putString("filename", "Dance With Dragons.pdf");
+                b.putString("filename", "OOP with C++.pdf");
                 i.putExtras(b);
                 v.getContext().startActivity(i);
             }

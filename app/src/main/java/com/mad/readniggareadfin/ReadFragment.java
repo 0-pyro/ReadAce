@@ -24,19 +24,18 @@ public class ReadFragment extends Fragment {
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_read, container, false);
     }
-    //this shit took too long to figure out
-    //for how simple it was
-    //clearly i am stupid
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView rview = view.findViewById(R.id.recyclerview);
         List<Books> books = new ArrayList<>();
         books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
-        books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
-        books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
-        books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
-        books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
+        books.add(new Books("Digital Principles and Applications", "Donal Leach", R.drawable.digprinc, "Digital Principles and Applications.pdf"));
+        books.add(new Books("Java SE 8 for the Really Impatient", "Cay S. Horstmann", R.drawable.java8cov, "Java 8 for the Impatient.pdf"));
+        books.add(new Books("Leviathan Wakes", "James S. A. Corey", R.drawable.levcover, "Leviathan Wakes.pdf"));
+        books.add(new Books("Object Oriented Programming with C++", "Sourav Sahay", R.drawable.cppcov, "OOP with C++.pdf"));
+        books.add(new Books("Engineering Physics", "B. DHANA PRASADA RAO", R.drawable.engiphycov, "PHYSICS.pdf"));
+
         rview.setLayoutManager(new LinearLayoutManager(getContext()));
         rview.setAdapter(new CustomAdapter(books, this.getContext()));
     }
