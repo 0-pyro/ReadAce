@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ReadNiggaReadfin"
+rootProject.name = "ReadAce"
 include(":app")
  

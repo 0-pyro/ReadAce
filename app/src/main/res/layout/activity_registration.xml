@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jpg"
+    android:background="@drawable/readaceregisterbg"
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
@@ -14,6 +14,7 @@
         android:layout_width="64dp"
         android:layout_height="56dp"
         android:clickable="true"
+        android:backgroundTint="#A37A6C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.833"
@@ -27,6 +28,7 @@
         android:layout_width="53dp"
         android:layout_height="54dp"
         android:clickable="true"
+        android:backgroundTint="#A37A6C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
@@ -59,9 +61,10 @@
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.274" />
 
     <TextView
         android:id="@+id/textView2"
@@ -69,7 +72,8 @@
         android:layout_height="79dp"
         android:text="REGISTRATION"
         android:textAlignment="center"
-        android:textColor="@color/design_default_color_error"
+        android:textColor="#68220B"
+        android:textStyle="bold"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,11 +89,13 @@
         android:text="REGISTER"
         android:textColorLink="#03F4EC"
         app:iconTint="#2196F3"
+        android:backgroundTint="#68220B"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.58" />
 
     <Button
         android:id="@+id/redirbutton"
@@ -98,10 +104,12 @@
         android:text="AlREADY REGISTERED?"
         android:textColorLink="#03F4EC"
         app:iconTint="#2196F3"
+        android:backgroundTint="#68220B"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
+        app:layout_constraintVertical_bias="0.695" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

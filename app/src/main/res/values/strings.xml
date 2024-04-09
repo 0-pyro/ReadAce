@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ReadNiggaReadfin</string>
+    <string name="app_name">ReadAce</string>
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nave">Close Navigation Drawer</string>
@@ -48,4 +48,19 @@
     <string name="title_activity_home">HomeActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="featuresOfApp">
+        <![CDATA[
+        &#8226; Free Access: Enjoy unlimited access to a vast library of books at no cost. \n
+        &#8226; Wide Selection: Explore a rich collection of books spanning different genres, from classics to contemporary bestsellers. \n
+        &#8226; User-Friendly Interface: Navigate effortlessly through our app\'s intuitive and easy-to-use interface. \n
+        &#8226; Offline Reading: Books to enjoy offline, perfect for reading on the go.
+    ]]>
+    </string>
+    <string name="readAce_in_short">
+        ReadAce is dedicated to bringing you a diverse selection of books from various genres, allowing you to immerse yourself in reading wherever you are.
+    </string>
+    <string name="readaceabout">
+        Whether you\'re a passionate bookworm or a casual reader, ReadAce is your companion for endless reading adventures.
+        Get lost in the pages of your next favorite book today!
+    </string>
 </resources>

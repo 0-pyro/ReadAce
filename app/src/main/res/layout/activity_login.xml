@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/brv"
+    android:background="@drawable/readaceloginbg"
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
@@ -21,20 +21,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
         android:id="@+id/redirbutton"
         android:layout_width="211dp"
         android:layout_height="57dp"
         android:text="NOT REGISTERED?"
-        android:textColorLink="#03F4EC"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        android:backgroundTint="#68220B"
         app:iconTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.81" />
 
     <EditText
         android:id="@+id/email"
@@ -46,44 +49,48 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="359dp"
         android:layout_height="79dp"
         android:layout_marginTop="136dp"
-        android:text="LOGIN FORM"
+        android:text="LOGIN"
         android:textAlignment="center"
-        android:textColor="#FFEB3B"
+        android:textColor="#68220B"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="211dp"
         android:layout_height="57dp"
+        android:backgroundTint="#68220B"
         android:text="LOGIN"
-        android:textColorLink="#03F4EC"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
         app:iconTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/exitbutton"
         android:layout_width="64dp"
         android:layout_height="56dp"
         android:clickable="true"
+        android:backgroundTint="#A37A6C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.833"
@@ -96,6 +103,7 @@
         android:id="@+id/back"
         android:layout_width="53dp"
         android:layout_height="54dp"
+        android:backgroundTint="#A37A6C"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

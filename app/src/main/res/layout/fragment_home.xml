@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@drawable/readacehomebg"
     tools:context=".HomeFragment">
 
     <TextView
@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Reading"
+        android:textStyle="italic"
         android:textSize="25dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,8 +26,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to ReadNiggaRead"
-        android:textSize="25dp"
+        android:text="Welcome to ReadAce"
+        android:textStyle="bold"
+        android:textSize="30dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,44 +39,44 @@
 
     <ImageView
         android:id="@+id/book2"
-        android:layout_width="161dp"
-        android:layout_height="184dp"
+        android:layout_width="166dp"
+        android:layout_height="219dp"
         android:src="@drawable/engiphycov"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/book1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.266" />
 
     <ImageView
         android:id="@+id/book4"
-        android:layout_width="161dp"
-        android:layout_height="184dp"
+        android:layout_width="197dp"
+        android:layout_height="213dp"
         android:src="@drawable/cppcov"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.797" />
 
     <ImageView
         android:id="@+id/book3"
-        android:layout_width="161dp"
-        android:layout_height="184dp"
+        android:layout_width="179dp"
+        android:layout_height="215dp"
         android:src="@drawable/levcover"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
+        app:layout_constraintVertical_bias="0.796" />
 
     <ImageView
         android:id="@+id/book1"
-        android:layout_width="161dp"
-        android:layout_height="184dp"
+        android:layout_width="177dp"
+        android:layout_height="219dp"
         android:src="@drawable/dwdcover"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
