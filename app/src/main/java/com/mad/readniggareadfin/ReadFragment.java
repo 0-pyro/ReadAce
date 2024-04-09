@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,6 +20,8 @@ import java.util.List;
 
 public class ReadFragment extends Fragment {
 
+    List<Books> books;
+    CustomAdapter cad;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -28,15 +31,38 @@ public class ReadFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView rview = view.findViewById(R.id.recyclerview);
-        List<Books> books = new ArrayList<>();
+        SearchView sview = view.findViewById(R.id.sview);
+        books = new ArrayList<>();
         books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
         books.add(new Books("Digital Principles and Applications", "Donal Leach", R.drawable.digprinc, "Digital Principles and Applications.pdf"));
         books.add(new Books("Java SE 8 for the Really Impatient", "Cay S. Horstmann", R.drawable.java8cov, "Java 8 for the Impatient.pdf"));
         books.add(new Books("Leviathan Wakes", "James S. A. Corey", R.drawable.levcover, "Leviathan Wakes.pdf"));
         books.add(new Books("Object Oriented Programming with C++", "Sourav Sahay", R.drawable.cppcov, "OOP with C++.pdf"));
         books.add(new Books("Engineering Physics", "B. DHANA PRASADA RAO", R.drawable.engiphycov, "PHYSICS.pdf"));
+        cad = new CustomAdapter(books, this.getContext());
+        sview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filter(newText);
+                return true;
+            }
+        });
 
         rview.setLayoutManager(new LinearLayoutManager(getContext()));
-        rview.setAdapter(new CustomAdapter(books, this.getContext()));
+        rview.setAdapter(cad);
+    }
+
+    public void filter(String newText) {
+        ArrayList<Books> filteredlist = new ArrayList<>();
+        for(Books item : books) {
+            if(item.getName().toLowerCase().contains(newText.toLowerCase())) {
+                filteredlist.add(item);
+            }
+        } cad.filterList(filteredlist);
     }
 }

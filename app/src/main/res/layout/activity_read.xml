@@ -10,6 +10,8 @@
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdf"
         android:layout_width="match_parent"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="179dp"/>

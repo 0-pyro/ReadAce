@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
@@ -66,5 +67,9 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public int getItemCount() {
         return localDataset.size();
+    }
+    public void filterList(ArrayList<Books> filteredlist) {
+        localDataset = filteredlist;
+        notifyDataSetChanged();
     }
 }
