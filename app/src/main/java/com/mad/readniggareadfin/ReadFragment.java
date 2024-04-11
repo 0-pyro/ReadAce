@@ -35,11 +35,8 @@ public class ReadFragment extends Fragment {
         books = new ArrayList<>();
 
         /*TODO: add books
-        *  A good girl's guide to murder.
-           The fault in our stars.
-            Life sucks get used to it.
-            Random thoughts of a random teenager.
-            The girl with no dreams.
+            Life sucks get used to it. couldnt download for free/easily
+            The girl with no dreams. couldnt download for free/easily
             We dream of space.
             Frankenstein.
             You only live once.
@@ -49,7 +46,9 @@ public class ReadFragment extends Fragment {
             The blue umbrella.
             Angels and demon- Dan Brown
             The girl with the dragon tattoo*/
-
+        books.add(new Books("A Goog Girl's Guide to Murder", "Holly Jackson", R.drawable.agggtmcov, "A Good Girl's Guide to Murder"));
+        books.add(new Books("The Fault in Our Stars", "John Green", R.drawable.tfioscov, "The-Fault-in-Our-Stars.pdf"));
+        books.add(new Books("Random Thoughts of a Random Teenager", "Multiple Authors", R.drawable.rtoartcov, "random-thoughts-of-a-random-teenager.pdf"));
         books.add(new Books("Dance with Dragons", "George R. R. Martin", R.drawable.dwdcover, "Dance With Dragons.pdf"));
         books.add(new Books("Digital Principles and Applications", "Donal Leach", R.drawable.digprinc, "Digital Principles and Applications.pdf"));
         books.add(new Books("Java SE 8 for the Really Impatient", "Cay S. Horstmann", R.drawable.java8cov, "Java 8 for the Impatient.pdf"));
